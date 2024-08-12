@@ -117,7 +117,7 @@ float marks = 99.99f;
 
 In Java, you can check the data type of an object using various methods. Below are different approaches to achieve this:
 
-## Directly in Main Method
+## 1. Directly in Main Method
 
 You can check the data type of a primitive or object by casting it to `Object` and then using `getClass().getSimpleName()`. 
 
@@ -126,7 +126,7 @@ float flt = 23.0f;
 System.out.println(((Object) flt).getClass().getSimpleName());
 ```
 
-## Using Wrapper Classes for Primitives
+## 2. Using Wrapper Classes for Primitives
 
 Wrapper classes in Java (e.g., `Integer`, `Double`) can be used to check the type of primitive data.
 
@@ -135,7 +135,7 @@ Integer num = 10;
 System.out.println(num.getClass().getSimpleName());
 ```
 
-## Creating a Custom Function
+## 3. Creating a Custom Function
 
 You can create a custom function to print the type of an object.
 
