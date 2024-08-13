@@ -152,6 +152,7 @@ public static void printType(Object obj) {
 
 **Note:** You cannot directly use `obj.getClass().getSimpleName()` in the `printType` method header or outside the method because Java's method signatures do not allow the direct embedding of statements or expressions in the declaration itself. You can only use expressions inside method bodies, not in method headers.
 
+---
 
 
 
