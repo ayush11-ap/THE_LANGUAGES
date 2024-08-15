@@ -1,3 +1,5 @@
+import java.util.* ;
+
 public class Java2 {
 
      public static void printType(Object obj) {        
@@ -10,18 +12,91 @@ public class Java2 {
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-//!  input kese lete hai 
+//!  how to take input in java ;
+
+
+
+
+String str = scnr.next();
+String str = scnr.nextLine();
+
+// int num = scnr.nextInt();
+// int num2 = scnr.nextInt();
+
+// float flt = scnr.nextFloat();
+// byte byte2 = scnr.nextByte();
+// float flt = scnr.nextFloat();
+
+
+//  nextLong()
+// docule   scnr.nextLong()
+//  nextDouble()
+
+// System.out.println(num);
+
+
+// System.out.println(byte2);
+
+
+
+
+
 
 // ! Type conversion / Widening / Implict conversion ;
+
 //?  Conversion condtion:
-// 1. Type compatible ho:
-// 2.  Destination type > Source type
+
+// 1. Type compatible :
+
+// long  a = 10 ;
+
+// int b = a ;
+
+// System.out.println(a); 
+// System.out.println(b);
+
+
+// 2.  Destination type > Source type ;
+
+
+
+
+
+
+// long  a = 10 ;
+
+// int b = a ;
+
+
+
+//  int to float 
+//  int to double
+
+//  int to str 
 
 //?  byte -> short -> int -> float -> long -> double
 
+
+
+
 // * lossy conversion  ---
+
 // ? implict converion  / float with nextInt();
+
+
+// float  flt = scnr.nextInt();
+// System.out.println(flt);
+
+
 // ? Conversion of characters ;
+
+
+// char a = '1';
+// int cnv = a ;
+
+// System.out.println(cnv);
+
+
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
