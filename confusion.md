@@ -168,9 +168,9 @@ In Java, attempting to assign a larger data type (like `double`) to a smaller da
 public class Main {
     public static void main(String[] args) {
         double source = 123.456;  // Source Type is `double`
-        int destination = (int) source;  // Explicit casting needed
+        int destination = source;  
 
-        System.out.println(destination); // Output: 123
+        System.out.println(destination); 
     }
 }
 ```
@@ -197,3 +197,15 @@ int main() {
 }
 ```
 
+
+
+### Remeber ;
+
+In java 
+ implict conversion from decimal numbers to intergers number cannot be done ; 
+
+In CPP
+ implict conversion from decimal numbers to intergers number can be done ; 
+
+In cpp & JAVA
+ smaller data type being inserted into a bigger data type: , can de done 
