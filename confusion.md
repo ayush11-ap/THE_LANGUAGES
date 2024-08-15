@@ -196,16 +196,37 @@ int main() {
     return 0;
 }
 ```
+---
+
+### Remember
+
+#### Java
+
+- **Implicit Conversion:**
+  - Conversion from decimal numbers to integers **cannot** be done. ❌
+
+- **Explicit Conversion:**
+  - Conversion from decimal numbers to integers **can** be done. ✔️
+
+- **Smaller Data Type to Bigger Data Type:**
+  - Insertion is **allowed**. ✔️
+
+- **Bigger Data Type to Smaller Data Type:**
+  - Implicit conversion **cannot** be done. ❌
+  - Explicit conversion **can** be done. ✔️
+
+#### C++
+
+- **Implicit Conversion:**
+  - Conversion from decimal numbers to integers **can** be done. ✔️
+  - Conversion from a bigger data type to a smaller data type is **allowed**, but the range may be truncated. ✔️
+
+- **Explicit Conversion:**
+  - Conversion from decimal numbers to integers **can** be done. ✔️
+  - Conversion from a bigger data type to a smaller data type is **allowed**, but the range may be truncated. ✔️
+
+---
 
 
 
-### Remeber ;
 
-In java 
- implict conversion from decimal numbers to intergers number cannot be done ; 
-
-In CPP
- implict conversion from decimal numbers to intergers number can be done ; 
-
-In cpp & JAVA
- smaller data type being inserted into a bigger data type: , can de done 

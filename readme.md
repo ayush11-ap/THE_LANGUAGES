@@ -113,6 +113,38 @@ float marks = 99.99f;
 
 ---
 
+## Printing OutPut 
+
+In Java, you can print output using the `System.out` object, which provides several methods for printing data to the console. Here are the most common methods:
+
+1. **Print to Console:**
+   - `System.out.print()`: Prints text to the console without a newline character at the end.
+   - `System.out.println()`: Prints text to the console with a newline character at the end.
+   - `System.out.printf()`: Formats and prints text to the console with specific formatting.
+
+**Examples:**
+
+- **Basic Printing:**
+
+  ```java
+  System.out.print("Hello, ");
+  System.out.print("World!"); // Output: Hello, World!
+
+  System.out.println("Hello, World!"); // Output: Hello, World! (with newline)
+  ```
+
+- **Formatted Printing:**
+
+  ```java
+  int number = 10;
+  double pi = 3.14159;
+
+  System.out.printf("Number: %d\n", number); // Output: Number: 10
+  System.out.printf("Pi value: %.2f\n", pi); // Output: Pi value: 3.14
+  ```
+
+In `printf()`, `%d` is used for integers, `%f` is used for floating-point numbers, and you can specify precision like `%.2f` for floating-point numbers.
+
 ## Checking Data Types in Java
 
 In Java, you can check the data type of an object using various methods. Below are different approaches to achieve this:
@@ -153,6 +185,240 @@ public static void printType(Object obj) {
 **Note:** You cannot directly use `obj.getClass().getSimpleName()` in the `printType` method header or outside the method because Java's method signatures do not allow the direct embedding of statements or expressions in the declaration itself. You can only use expressions inside method bodies, not in method headers.
 
 ---
+
+
+### Taking Input
+
+#### Java
+In Java, we use the `Scanner` class from the `java.util` package to take input.
+- **Integer Input:**
+
+```java
+import java.util.*;
+
+public class App1 {
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        
+        int num = scnr.nextInt();
+        System.out.println(num);
+    }
+}
+```
+
+- **String Input:**
+
+```java
+import java.util.*;
+
+public class App1 {
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        
+        // String str = scnr.next(); // Use next() for single word input
+        String str = scnr.nextLine(); // Use nextLine() for full line input
+        System.out.println(str);
+    }
+}
+```
+
+Different `Scanner` input methods in Java:
+- `scnr.next()`: Reads the next token (word) from the input.
+- `scnr.nextLine()`: Reads the entire line of input, including spaces.
+- `scnr.nextInt()`: Reads the next integer from the input.
+- `scnr.nextFloat()`: Reads the next float value from the input.
+- `scnr.nextByte()`: Reads the next byte value from the input.
+- `scnr.nextLong()`: Reads the next long value from the input.
+- `scnr.nextDouble()`: Reads the next double value from the input.
+
+These methods are used to read different types of data from the input stream using the `Scanner` class.
+
+---
+
+### Type Conversion / Widening / Implicit Conversion
+
+## Type Conversion
+Type conversion occurs when:
+
+### a. Types are Compatible
+This means you can convert between compatible numeric data types, such as converting from `float` to `int` or `long`. However, you cannot convert from `integer` to `boolean`.
+
+### b. Destination Type is Larger than Source Type
+This means you can store a smaller data type in a larger data type, but not the other way around. For example, you can store an `int` in a `long`, but you cannot store a `long` in an `int` without potential data loss.
+
+```java
+int d = 23;
+long c = d;
+```
+
+In this example, `c` is the destination type and `d` is the source type.
+
+### Conversion Hierarchy
+The common conversion hierarchy is as follows:
+- `byte` → `short` → `int` → `float` → `long` → `double`
+
+### Lossy Conversion
+Lossy conversion occurs when data is lost during conversion, such as trying to fit 8 bytes of data into 2 bytes. Java does not allow lossy conversion; it ensures that data loss does not occur during type conversion.
+
+
+### Source Type vs. Destination Type
+
+**Example of smaller data type being inserted into a bigger data type:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int smallValue = 42;  // Source Type is `int`
+        double largerValue = smallValue;  // Destination Type is `double`
+
+        System.out.println("Small Value: " + smallValue);  // Output: 42
+        System.out.println("Larger Value: " + largerValue); // Output: 42.0
+    }
+}
+```
+
+**Explanation:**
+- **Source Type (`int`)**: The variable `smallValue` holds an integer.
+- **Destination Type (`double`)**: The variable `largerValue` can hold a `double`, so the `int` value `42` is implicitly converted to `42.0` without losing any data.
+
+
+
+
+
+**Example of bigger data type being inserted into a smaller data type:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        double source = 123.456;  // Source Type is `double`
+        int destination = source;  
+
+        System.out.println(destination); 
+    }
+}
+```
+
+**Error:**
+- Possible lossy conversion from `double` to `int`
+
+---
+
+## Type Casting in Java
+
+### Introduction
+ Type casting is the process of converting a variable from one data type to another. Java performs automatic type conversions (widening) when safe, but explicit (narrowing) casting is required when converting to a smaller or less precise type. This explicit casting is done using a cast operator.
+
+### Syntax for Explicit Casting
+```java
+(type) value
+```
+- **`type`**: The target data type to which you want to convert the value.
+- **`value`**: The value to be converted.
+
+### Example of Type Casting
+
+```java
+public class App1 {
+    public static void main(String[] args) {
+        // Example 1: Casting from double to int
+        double temperature = 36.7;
+        int roundedTemperature = (int) temperature;
+        System.out.println("Double to int: " + roundedTemperature); // Output: 36
+
+        // Example 2: Casting from char to int
+        char letter = 'A';
+        int letterCode = (int) letter;
+        System.out.println("Char to int: " + letterCode); // Output: 65
+
+        // Example 3: Casting from long to short
+        long largeNumber = 123456789L;
+        short smallNumber = (short) largeNumber;
+        System.out.println("Long to short: " + smallNumber); // Output: -16961 (data loss due to narrowing)
+
+        // Example 4: Casting from float to byte
+        float pi = 3.14f;
+        byte piByte = (byte) pi;
+        System.out.println("Float to byte: " + piByte); // Output: 3 (data loss due to narrowing)
+    }
+}
+```
+
+---
+
+### Type Promotion in Expressions
+
+When performing arithmetic operations in Java, the type of the result is determined by the highest precision data type involved in the expression. Here’s a simple rule to remember:
+
+**"The result of an expression will be promoted to the highest precision type involved in that expression."**
+
+Here’s how it works:
+
+1. **If the expression involves `float`, `long`, and `int`:**
+   - **If `float` is present**: The entire expression is promoted to `float`. This is because `float` has a lower precision than `double`, but it’s higher than `int` and `long`.
+   - **If `float` is not present, but `long` is**: The entire expression is promoted to `long`. This is because `long` has a higher precision than `int`.
+   - **If neither `float` nor `long` is present, only `int` values**: The result is of type `int`.
+
+2. **If `double` is present in the expression:**
+   - **The entire expression is promoted to `double`**. This is because `double` has the highest precision among standard numeric types.
+
+
+ 
+### Example
+
+```java
+int intValue = 10;
+long longValue = 20;
+float floatValue = 30.0f;
+double doubleValue = 40.0;
+
+// The expression involves `float`, `long`, and `int`
+// Since `float` is present, the entire expression is promoted to `float`
+float result1 = intValue + longValue + floatValue;
+System.out.println("Result 1 (float): " + result1);
+
+// The expression involves `long`, and `int`
+// Since `float` is not present, the expression is promoted to `long`
+long result2 = intValue + longValue;
+System.out.println("Result 2 (long): " + result2);
+
+// The expression involves `double` and `int`
+// Since `double` is present, the entire expression is promoted to `double`
+double result3 = intValue + doubleValue;
+System.out.println("Result 3 (double): " + result3);
+```
+
+In summary, always remember: *The highest precision type in the expression determines the result type.*
+---
+
+
+
+---
+
+**Summary for Data Conversions**
+
+- **Implicit Conversion:**
+  - Conversion from decimal numbers to integers **cannot** be done. ❌
+
+- **Explicit Conversion:**
+  - Conversion from decimal numbers to integers **can** be done. ✔️
+
+- **Smaller Data Type to Bigger Data Type:**
+  - Insertion is **allowed**. ✔️
+
+- **Bigger Data Type to Smaller Data Type:**
+  - Implicit conversion **cannot** be done. ❌
+  - Explicit conversion **can** be done. ✔️
+
+
+
+#### **Key** Points
+- **Narrowing Conversion**: Converting from a larger data type to a smaller one (e.g., `double` to `int`) can result in data loss. Explicit casting is required and should be used with caution.
+- **Widening Conversion**: Automatically handled by Java when converting from a smaller data type to a larger one (e.g., `int` to `double`). Explicit casting is not required.
+
+---
+
+
+
 
 
 
