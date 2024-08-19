@@ -66,37 +66,86 @@ Scanner scnr = new Scanner(System.in) ;
 
 
 // ? prime or not a given number - 2 methods  
-
 // ?Print reverse of a number ---  and also save it into a variable 
 
-int num = scnr.nextInt();
-int numCpy = num;
- int reversedNumber = 0 ;
+// int num = scnr.nextInt();
+// int numCpy = num;
+//  int reversedNumber = 0 ;
 
- while(num > 0){
-     int LD = num%10  ;
-     reversedNumber = reversedNumber * 10 + LD ;
-     num /= 10 ;
+//  while(num > 0){
+//      int LD = num%10  ;
+//      reversedNumber = reversedNumber * 10 + LD ;
+//      num /= 10 ;
 
- }
+//  }
 
- if(reversedNumber == numCpy) {
-     System.out.println("this is palindrome ") ;
- } else {
-     System.out.println("this is not a  palindrome ");
+//  if(reversedNumber == numCpy) {
+//      System.out.println("this is palindrome ") ;
+//  } else {
+//      System.out.println("this is not a  palindrome ");
 
- }
+//  }
 
 
 // ?  
 
 
 
-// Write a Java program that takes a year from the user and print whether that
-// year is a leap year or not.
-// ? sum of n numbers -2 methods
+// ! Write a Java program that takes a year from the user and print whether that year is a leap year or not.
+
+//  ! year % 4 == 0  -- T  && (// ! year % 100 != 0  -- //  || ! year % 400 ==0  -- f )
 
 
+// int  year = scnr.nextInt() ;
+
+// if(year%4 == 0 && ( year%  100!= 0 || year % 400 ==0)){
+//     System.out.println("true");
+// }else{
+//     System.out.println("false");
+
+// }
+
+
+// ? sum of first  n numbers -2 methods
+
+// int sum = 0 ;
+// for loop std ;
+// sum += i ; -- mthods 1 
+
+
+//  ! better one 
+// int  n = scnr.nextInt() ;
+// System.out.println("the sum of n numbers is "   + (n*(n+1))/2);
+
+
+
+// // ! To decimal to binary 
+
+// int Deci = 10 ;
+
+// int Byrn =0 ;
+
+// while (Deci  > 0){
+//     int rem = Deci % 2 ;
+// System.out.println("rem is " + rem);
+
+//     Byrn = Byrn * 10 + rem ;
+// System.out.println("Byrn is " + Byrn);
+//     Deci /= 2 ;
+// System.out.println("Deci is " + Deci);
+// System.out.println(" ++++++++" );
+
+// }
+
+// System.out.println(Byrn);
+// System.out.println(1%2);
+
+ 
+
+//  10 --- 
+//  1000 -- 
+//  1000000000 ---
+//  
 
 
 
