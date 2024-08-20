@@ -1,15 +1,19 @@
-// ? prime or not a given number 
-// ?Print reverse of a number , and it is palindrome or not 
-// ! Write a Java program that takes a year from the user and print whether that year is a leap year or not.
-// ? sum of first  n numbers -2 methods
 
-// ! to binary  
-// ! to decimal 
-// ! patterns 4 questions 
+### Java Programming Questions
+
+1. **Check if a Given Number is Prime**
+2. **Reverse a Number and Check if it is a Palindrome**
+3. **Check if a Given Year is a Leap Year**
+4. **Sum of First N Numbers (Two Methods)**
+    - Method 1: Using a Loop
+    - Method 2: Using Formula
+5. **Convert Decimal to Binary**
+6. **Convert Binary to Decimal**
 
 
+7. **Convert Binary to Decimal**
 
-- Line Number Based Star Pattern
+- Star pattern 
 ```
 *
 **
