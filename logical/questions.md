@@ -9,8 +9,6 @@
 
 
 
-
-
 - Line Number Based Star Pattern
 ```
 *

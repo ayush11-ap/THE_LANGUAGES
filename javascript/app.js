@@ -8,7 +8,6 @@
 // //  let evenArr = arr.filter((elem)=> elem % 2 == 0) ;
 
 // let arr = [ 2 ,3,4,5,6 ,20 ,20  ] ;
-
 //  let total = arr.reduce((acc , val)=>val + acc);
 
 
