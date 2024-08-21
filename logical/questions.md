@@ -46,3 +46,24 @@ GHIJ
 KLMNO
 PQRSTU
 ```
+
+ - Inverted Rotated Half Pyramid
+
+```plaintext
+    *
+   **
+  ***
+ ****
+*****
+```
+
+ - Inverted Half Pyramid with Numbers
+
+```plaintext
+12345
+1234
+123
+12
+1
+```
+
