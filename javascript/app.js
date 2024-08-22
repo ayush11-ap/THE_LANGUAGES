@@ -1,8 +1,12 @@
 
 // ### **Module 12 - Asynchronous & API Handling:**
-// 1. setInterval & setTimeout
-// 2. clearInterval & clearTimeout
+
+// 1. setInterval & setTimeout ✔️
+// 2. clearInterval & clearTimeout ✔️
+
+
 // 3. Main Stack & Side Stack & event loop
+
 // 4. Creating Promises
 // 5. Then, Catch, Finally, Async, Await
 // 6. Promise.all
