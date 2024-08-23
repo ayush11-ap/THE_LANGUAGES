@@ -51,6 +51,42 @@ PQRSTU
 
 ## With Functions /Methods 
 
+1. **Check if a Number is Prime**
+   - Write a program to check if a number is prime or not.
+
+2. **Find the Factorial of a Number**
+   - Write a program to find the factorial of a number.
+
+3. **Check if a Number is an Armstrong Number**
+   - Write a program to check if a number is an Armstrong number or not.
+
+4. **Reverse a Number**
+   - Write a program to reverse a number.
+
+5. **Find the GCD and LCM of Three Numbers**
+   - Write a program to find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of three numbers.
+
+6. **Find the Smallest and Largest Among Three Numbers**
+   - Write a program to find the smallest and largest among three numbers.
+
+7. **Factorial Calculation**: Write a function to find the factorial of a number.
+
+8. **Primes in Range**: Write a function to find all prime numbers in a given range.
+
+9. **Binomial Coefficient**: Write a function to calculate the binomial coefficient \( C(n, k) \).
+
+
+
+
+
+
+
+
+
+
+
+
+
  - Inverted Rotated Half Pyramid
 
 ```plaintext
@@ -71,7 +107,6 @@ PQRSTU
 1
 ```
 
-Sure! Below are the pattern descriptions and the corresponding questions. Try to solve these by writing the code yourself and see if you can generate the correct patterns.
 
 ### 1. Hollow Rectangle
 **Question:** Write a program to print a hollow rectangle of `*` with a given number of rows and columns.

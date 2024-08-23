@@ -27,7 +27,35 @@
 
 
 
+let pros = new Promise((res ,rej)=>{
 
+setInterval(()=>{
+    // res("hrlo")
+    rej("your  passo is wroung ")
+
+}, 2000)
+
+})
+
+//  pros
+//  .then((data)=>console.log(data))
+//  .catch((error)=>console.log(error))
+//  .finally(()=>console.log("always"))
+
+
+async function Async2(){
+
+try {
+    
+    let res = await  pros;
+console.log(res)
+} catch (error) {
+    console.log(error)
+}
+
+} 
+
+Async2();
 
 
 
