@@ -2,6 +2,26 @@ import java.util.*;
 public class app {
 
 
+// ! part -  methods 
+//  Syntax with Parameters
+//  Parameters vs Arguments
+
+
+
+//  Function Overloading
+
+//  Overloading using Parameters no of  paramters 
+//  Overloading using Data Types
+
+//  ! Theory 
+//  Call by Value (in Java) ( it is done for variables )
+//  What happens in memory (Call Stack)
+
+//  Inbuilt vs User-defined Methods
+
+//  Method Scope -- 
+//  Block Scope  -{}
+
 
 //  public static int printName( boolean a ){
 //      // System.out.print("Nitesh");
@@ -34,25 +54,6 @@ int res = Swap(a ,b);
 
 System.out.print(z);
 
-// ! part -  methods 
-//  Syntax with Parameters
-//  Parameters vs Arguments
-
-
-
-//  Function Overloading
-
-//  Overloading using Parameters no of  paramters 
-//  Overloading using Data Types
-
-//  ! Theory 
-//  Call by Value (in Java) ( it is done for variables )
-//  What happens in memory (Call Stack)
-
-//  Inbuilt vs User-defined Methods
-
-//  Method Scope -- 
-//  Block Scope  -{}
 
 
 }

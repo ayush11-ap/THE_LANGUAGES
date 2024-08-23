@@ -14,6 +14,15 @@
 //  8 . Promse.any 
 
 
+// 
+
+// ?  set Interval 
+
+//  let time = setInterval(()=>{
+//     console.log(100)
+// } , 1000)
+
+// clearInterval(time)
 
 
 

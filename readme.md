@@ -417,6 +417,122 @@ In summary, always remember: *The highest precision type in the expression deter
 
 ---
 
+# Java Methods and Function Overloading
+
+## 1. Methods
+
+### Syntax with Parameters
+A method in Java is a block of code that performs a specific task. It can take parameters as inputs, which are used within the method.
+
+**Example:**
+
+```java
+public static int addNumbers(int a, int b) {
+    return a + b;
+}
+```
+
+### Parameters vs Arguments
+- **Parameters** are variables defined in the method declaration.
+- **Arguments** are the actual values passed to the method when it is called.
+
+**Example:**
+
+In the method `addNumbers(int a, int b)`, `a` and `b` are parameters. When you call `addNumbers(5, 10)`, `5` and `10` are arguments.
+
+## 2. Function Overloading
+
+Function overloading in Java occurs when two or more methods in the same class have the same name but different parameter lists (number or type of parameters).
+
+### Overloading Using Number of Parameters
+
+**Example:**
+
+```java
+public static int multiply(int a, int b) {
+    return a * b;
+}
+
+public static int multiply(int a, int b, int c) {
+    return a * b * c;
+}
+```
+
+### Overloading Using Data Types
+
+**Example:**
+
+```java
+public static int multiply(int a, int b) {
+    return a * b;
+}
+
+public static double multiply(double a, double b) {
+    return a * b;
+}
+```
+
+## 3. Theory
+
+### Call by Value (in Java)
+- In Java, arguments are passed to methods by value.
+- This means a copy of the actual parameter’s value is made in memory.
+- The original value remains unchanged, even if the method modifies the parameter.
+
+**Example:**
+
+```java
+public static int Swap(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+    return a;
+}
+```
+
+### What Happens in Memory (Call Stack)
+- When a method is called, a new frame is created on the call stack for that method.
+- All the local variables and parameters are stored in this frame.
+- Once the method execution is complete, the frame is removed from the call stack.
+
+### Inbuilt vs User-defined Methods
+- **Inbuilt methods** are provided by Java, such as `Math.sqrt()` or `System.out.println()`.
+- **User-defined methods** are created by the programmer to perform specific tasks.
+
+### Method Scope
+- The scope of a method defines where that method can be called within the code.
+- Methods in Java can have a scope defined by access modifiers like `public`, `private`, `protected`, or package-private (no modifier).
+
+### Block Scope
+- Variables declared inside a block `{}` have block scope, meaning they are only accessible within that block.
+
+## 4. Example Code
+
+```java
+public static void main(String[] args) {
+
+    int a = 10;
+    int b = 20;
+
+    // Call the Swap method
+    int res = Swap(a, b);
+
+    // Print the result
+    System.out.print("After Swap, value of a: " + res);
+    // Note: In Java, `b` remains unchanged in the `main` method because Java is pass-by-value.
+}
+```
+
+## 5. Function Overloading Summary
+- Function overloading allows the same method name to be used in the same class as long as the parameter lists are different.
+- Overloading depends on:
+  1. Type of parameters
+  2. Number of parameters
+- **Note:** The return type alone cannot distinguish overloaded methods in Java.
+
+---
+
+
 
 
 
