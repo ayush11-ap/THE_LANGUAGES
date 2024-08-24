@@ -14,8 +14,6 @@
 //  8 . Promse.any 
 
 
-// 
-
 // ?  set Interval 
 
 //  let time = setInterval(()=>{

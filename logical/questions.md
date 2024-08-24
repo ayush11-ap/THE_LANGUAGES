@@ -69,11 +69,10 @@ PQRSTU
 6. **Find the Smallest and Largest Among Three Numbers**
    - Write a program to find the smallest and largest among three numbers.
 
-7. **Factorial Calculation**: Write a function to find the factorial of a number.
 
-8. **Primes in Range**: Write a function to find all prime numbers in a given range.
+7. **Primes in Range**: Write a function to find all prime numbers in a given range.
 
-9. **Binomial Coefficient**: Write a function to calculate the binomial coefficient \( C(n, k) \).
+8. **Binomial Coefficient**: Write a function to calculate the binomial coefficient \( C(n, k) \).
 
 
 

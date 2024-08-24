@@ -9,13 +9,18 @@ public class app {
 
 
 
-if(isArmstrong(153)){
-     System.out.println("this is amstrong");
-} else{
-     System.out.println("this is not amstrong");
+// if(isArmstrong(153)){
+//      System.out.println("this is amstrong");
+// } else{
+//      System.out.println("this is not amstrong");
 
-}
+// }
+
      }
+
+
+
+
 
    
     public static boolean isArmstrong(int num ) {
@@ -73,13 +78,11 @@ if(num <=1){
 }
 //   ! Method  -1
 // return num * factorial(num -1);
-
 //   ! Method  -2
 for(int i = 1 ; i<=num ; i++){
      fact *= i;
 }
 return fact ;
-
  }
 
      
