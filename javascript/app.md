@@ -64,3 +64,28 @@ console.log(sum); // Output: 14
    - Process: sum of all elements
    - Output: 9
 
+
+
+## AKSHAY
+- AJAX
+- JSON
+- Creating elements with HTML
+- Adding class, attribute, and ID to HTML elements
+- `json.parse()` and `json.stringify()`
+
+## SIDDHANT
+- Explain Each Status codes (200, 201, 400, 401, 403, 404, 500, 502, 503)
+- API (Application Programming Interface)
+- what is meant by port
+
+## AYUSH
+- Fetch API (using `then-catch` and `async-await`)
+- Fake Store API, Fake User API
+- Axios library (difference from Fetch)
+- API endpoints and routes
+
+## NITESH
+- Displaying data with HTML
+- HTTP headers, GET and POST methods
+- Query strings
+  

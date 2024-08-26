@@ -162,3 +162,80 @@ public class BinaryToDecimal {
 }
 ```
 ---
+
+### 1. Check if a Number is Prime
+
+**Question:**
+Write a program to check if a number is prime or not.
+
+**Solution:**
+```java
+public static boolean isPrime(int num) {
+    if (num <= 1) {
+        return false;
+    }
+    for (int i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+### 2. Find the Factorial of a Number
+
+**Question:**
+Write a program to find the factorial of a number.
+
+**Solution:**
+```java
+public static int factorial(int num) {
+    int fact = 1;
+    if (num < 0) {
+        throw new IllegalArgumentException("Number must be non-negative");
+    }
+    if (num <= 1) {
+        return 1;
+    }
+    // Method 1: Recursive Approach
+    // return num * factorial(num - 1);
+
+    // Method 2: Iterative Approach
+    for (int i = 1; i <= num; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+```
+
+### 3. Check if a Number is an Armstrong Number
+
+**Question:**
+Write a program to check if a number is an Armstrong number or not.
+
+**Solution:**
+```java
+public static boolean isArmstrong(int num) {
+    int numCopy = num; 
+    int tempAms = 0;
+    int pow = 0;
+
+    // Method 1: Calculate the number of digits
+    while (num > 0) {
+        pow++;
+        num /= 10;
+    }
+
+    // Reset num to original value
+    num = numCopy;
+
+    while (num > 0) {
+        int ld = num % 10; 
+        tempAms += Math.pow(ld, pow);
+        num /= 10; 
+    }
+
+    return tempAms == numCopy;
+}
+```

@@ -9,11 +9,43 @@
     - Method 2: Using Formula
 5. **Convert Decimal to Binary**
 6. **Convert Binary to Decimal**
+8. **Convert Binary to Decimal**
+
+## With Functions /Methods 
+
+1. **Check if a Number is Prime**
+   - Write a program to check if a number is prime or not.
+
+2. **Find the Factorial of a Number**
+   - Write a program to find the factorial of a number.
+
+3. **Check if a Number is an Armstrong Number**
+   - Write a program to check if a number is an Armstrong number or not.
+
+4. **Reverse a Number**
+   - Write a program to reverse a number.
+
+5. **Find the Smallest and Largest Among Three Numbers**
+   - Write a program to find the smallest and largest among three numbers.
+
+7. **Primes in Range**: Write a function to find all prime numbers in a given range.
 
 
-7. **Convert Binary to Decimal**
+8. **Binomial Coefficient**: Write a function to calculate the binomial coefficient \( C(n, k) \).
 
-## Patterns 
+
+
+
+
+
+
+
+<!-- 5. **Find the GCD and LCM of Three Numbers**
+   - Write a program to find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of three numbers. -->
+
+
+
+## Patterns - EASY
 
 - Star pattern 
 ```
@@ -48,42 +80,9 @@ GHIJ
 KLMNO
 PQRSTU
 ```
+---
 
-## With Functions /Methods 
-
-1. **Check if a Number is Prime**
-   - Write a program to check if a number is prime or not.
-
-2. **Find the Factorial of a Number**
-   - Write a program to find the factorial of a number.
-
-3. **Check if a Number is an Armstrong Number**
-   - Write a program to check if a number is an Armstrong number or not.
-
-4. **Reverse a Number**
-   - Write a program to reverse a number.
-
-5. **Find the GCD and LCM of Three Numbers**
-   - Write a program to find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of three numbers.
-
-6. **Find the Smallest and Largest Among Three Numbers**
-   - Write a program to find the smallest and largest among three numbers.
-
-
-7. **Primes in Range**: Write a function to find all prime numbers in a given range.
-
-8. **Binomial Coefficient**: Write a function to calculate the binomial coefficient \( C(n, k) \).
-
-
-
-
-
-
-
-
-
-
-
+## Patterns - ADV
 
 
  - Inverted Rotated Half Pyramid
