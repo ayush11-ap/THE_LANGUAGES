@@ -1,28 +1,31 @@
 
+
 // ### **Module 12 - Asynchronous & API Handling:**
 
 // 1. setInterval & setTimeout ✔️
 // 2. clearInterval & clearTimeout ✔️
-
-
 // 3. Main Stack & Side Stack & event loop
-
 // 4. Creating Promises
 // 5. Then, Catch, Finally, Async, Await
 // 6. Promise.all
 // 7. Promise.race
 //  8 . Promse.any 
-
-
-// ?  set Interval 
-
-//  let time = setInterval(()=>{
-//     console.log(100)
-// } , 1000)
-
-// // clearInterval(time)
-
-
+//  AJAX
+//  JSON
+//  Creating elements with HTML
+//  Adding class, attribute, and ID to HTML elements
+//  `JSON.parse()` and `JSON.stringify()`
+//  HTTP Status Codes (200, 201, 401, 403, 404, 502, 503)
+//  API (Application Programming Interface)
+//  Ports
+//  Fetch API (using `.then-catch` and `async-await`)
+//  Fake Store API, Fake User API
+//  Axios library (difference from Fetch)
+//  API endpoints and routes
+//  Displaying data with HTML
+//  HTTP headers
+//  GET and POST methods
+//  Query strings
 
 
 // let pros = new Promise((res ,rej)=>{
@@ -111,17 +114,30 @@
 //   });
 
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// !!!! API 
+
+//  AJAX
+//  JSON
+//  Creating elements with HTML
+//  Adding class, attribute, and ID to HTML elements
+//  `JSON.parse()` and `JSON.stringify()`
 
 
- let url ="http://universities.hipolabs.com/search?name="
+//  HTTP Status Codes (200, 201, 401, 403, 404, 502, 503)
 
- let country = "India"
+//  API (Application Programming Interface)
+//  Ports
+//  Fetch API (using `.then-catch` and `async-await`)
+//  Fake Store API, Fake User API
+//  Axios library (difference from Fetch)
+//  API endpoints and routes
 
- fetch(url + country)
- .then((data) => data.json())
- .then((res) => {
-   console.log(res);
- })
- .catch((error) => {
-   console.error('Error:', error);
- });
+
+//  Displaying data with HTML
+//  HTTP headers
+//  GET and POST methods
+//  Query strings
+
+
+
