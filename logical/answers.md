@@ -227,6 +227,8 @@ public static boolean isArmstrong(int num) {
         num /= 10;
     }
 
+  // MEthod 2  System.out.println( String.valueOf(Math.abs(num)).length());
+
     // Reset num to original value
     num = numCopy;
 
