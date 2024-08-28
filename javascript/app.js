@@ -12,19 +12,12 @@
 //  8 . Promse.any 
 //  AJAX
 //  JSON
-//  Creating elements with HTML
-//  Adding class, attribute, and ID to HTML elements
 //  `JSON.parse()` and `JSON.stringify()`
-//  HTTP Status Codes (200, 201, 401, 403, 404, 502, 503)
 //  API (Application Programming Interface)
-//  Ports
 //  Fetch API (using `.then-catch` and `async-await`)
-//  Fake Store API, Fake User API
 //  Axios library (difference from Fetch)
 //  API endpoints and routes
 //  Displaying data with HTML
-//  HTTP headers
-//  GET and POST methods
 //  Query strings
 
 
@@ -197,4 +190,29 @@
 //    }
    
 //    getallUsers() 
+
+
+// console.log(process.argv);
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('What is your name? ', (answer) => {
+    console.log(`Hello, ${answer}!`);
+
+
+    rl.question('What is your Age? ', (age) => {
+        console.log(`Hello, ${age}!`);
+    
+        rl.close();
+    });
+
+
+
+});
+
 
