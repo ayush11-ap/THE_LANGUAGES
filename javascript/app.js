@@ -117,7 +117,7 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // !!!! API 
 
-//  AJAX
+//  AJAX --
 //  JSON
 //  Creating elements with HTML
 //  Adding class, attribute, and ID to HTML elements
@@ -127,17 +127,74 @@
 //  HTTP Status Codes (200, 201, 401, 403, 404, 502, 503)
 
 //  API (Application Programming Interface)
-//  Ports
 //  Fetch API (using `.then-catch` and `async-await`)
 //  Fake Store API, Fake User API
 //  Axios library (difference from Fetch)
+ 
 //  API endpoints and routes
 
 
 //  Displaying data with HTML
 //  HTTP headers
 //  GET and POST methods
-//  Query strings
+//  Query strings  // --
 
 
+
+
+
+// *   Module 13 - Error Handling & File Management:
+// *   1. Try-Catch 
+// *   2. Custom Error Handling (Using extend Error Class)
+// *   3. Require & Export
+// *   4. Default Import/Export
+// *   5. Named Import/Export
+
+// *   6. Taking Input in JS with Node
+
+
+
+// const promiseFive = new Promise(function(res,rej){
+//     setTimeout(function(){
+//                 let noerror = true
+//                 if(noerror){
+//                     res({
+//                         username:"javascript" , passo:"123"
+//                     })
+//                 }
+//                 else {
+//                     rej("something went wrong")
+//                 }
+//             },1000)
+// })
+
+
+
+// async function  consumedpromiseFive(){
+//     try{
+//        const response =  await promiseFive ;  
+
+//     console.log(response)
+//     } catch(err){ 
+//        console.log(err)
+//     }
+//    }
+
+//    consumedpromiseFive();
+   
+   
+   
+   
+//    async function getallUsers(){
+//      try{
+//        let res = await fetch('https://randomuser.me/api')
+   
+//        const data  = await res.json() ; // json me convert karne me time lagta hai  , readable format me 
+//        console.log(res);
+//      }catch(err){
+//        console.log(err);
+//      }
+//    }
+   
+//    getallUsers() 
 
