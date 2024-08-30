@@ -190,8 +190,6 @@
 //    }
    
 //    getallUsers() 
-
-
 // console.log(process.argv);
 
 const readline = require('readline');
@@ -210,8 +208,6 @@ rl.question('What is your name? ', (answer) => {
     
         rl.close();
     });
-
-
 
 });
 

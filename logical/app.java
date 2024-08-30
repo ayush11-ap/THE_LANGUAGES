@@ -3,6 +3,9 @@ import java.util.*;
 
 public class App {
 
+  
+
+
     public static boolean PrimeCheck(int num) {
 
         if (num <= 1) {
@@ -26,14 +29,13 @@ public class App {
       System.out.println( i + " , " + res);
  }
 
-
     }
 
     public static void main(String[] args) {
         int numberToCheck = 12; 
      //    boolean res = PrimeCheck(numberToCheck);
 
-     PrimesInRange(10);
+    //  PrimesInRange(10);
    
         
     }
