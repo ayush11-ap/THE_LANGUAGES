@@ -113,6 +113,55 @@ int num = 1;
 // O(n**2)
 
 
+public static void ButterFly(int n) {
+
+   
+    for (int i = 0; i <= n; i++) {
+        
+        for (int j = 0; j < i + 1; j++) {
+            System.out.print("*");
+        }
+
+       
+        for (int j = 0; j < (n - i) * 2; j++) {
+            System.out.print(" ");
+        }
+
+       
+        for (int j = 0; j < i + 1; j++) {
+            System.out.print("*");
+        }
+
+        System.out.println("");
+    }
+
+   
+    for (int i = n; i >= 0; i--) {
+      
+        for (int j = 0; j < i + 1; j++) {
+            System.out.print("*");
+        }
+
+      
+        for (int j = 0; j < (n - i) * 2; j++) {
+            System.out.print(" ");
+        }
+
+       
+        for (int j = 0; j < i + 1; j++) {
+            System.out.print("*");
+        }
+
+        System.out.println("");
+   
+    }
+
+
+
+
+
+
+}
 
     public static void main(String[] args) throws Exception {
 
@@ -122,5 +171,6 @@ int num = 1;
             // BnyrTr(5);
         // SolidRhombus(5);
         // HollowRhombus(5);
+        ButterFly(5);
 
 }}
