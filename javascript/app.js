@@ -20,6 +20,15 @@
 //  Displaying data with HTML
 //  Query strings
 
+// *   Module 13 - Error Handling & File Management:
+// *   1. Try-Catch 
+// *   2. Custom Error Handling (Using extend Error Class)
+// *   3. Require & Export
+// *   4. Default Import/Export
+// *   5. Named Import/Export
+// *   6. Taking Input in JS with Node
+
+
 
 // let pros = new Promise((res ,rej)=>{
 
@@ -136,14 +145,6 @@
 
 
 
-// *   Module 13 - Error Handling & File Management:
-// *   1. Try-Catch 
-// *   2. Custom Error Handling (Using extend Error Class)
-// *   3. Require & Export
-// *   4. Default Import/Export
-// *   5. Named Import/Export
-
-// *   6. Taking Input in JS with Node
 
 
 
