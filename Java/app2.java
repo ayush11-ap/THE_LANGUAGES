@@ -200,6 +200,6 @@ System.out.println();
         // SolidRhombus(5);
         // HollowRhombus(5);
         // ButterFly(5);
-      DiamondPattern(10);
+    //   DiamondPattern(10);
 
 }}
