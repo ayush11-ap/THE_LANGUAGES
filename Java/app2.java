@@ -156,8 +156,38 @@ public static void ButterFly(int n) {
    
     }
 
+}
 
 
+public static void DiamondPattern(int num){
+
+    for(int i = 0 ; i <num -1 ;i++){
+
+   for(int j = 0 ; j < num -i+1 ; j++){
+    System.out.print(" ");
+   }   
+
+   for(int j = -1  ; j < (2*i -1)+1;j++ ){
+    System.out.print("*");
+   }
+
+System.out.println();
+    }
+
+
+     for(int i = num -1 ; i >=0 ;i--){
+
+   for(int j = 0 ; j <num -i+1 ; j++){
+    System.out.print(" ");
+   }   
+
+
+   for(int j = -1  ; j < (2*i -1)+1;j++ ){
+    System.out.print("*");
+   }
+
+System.out.println();
+    }
 
 
 
@@ -172,5 +202,6 @@ public static void ButterFly(int n) {
         // SolidRhombus(5);
         // HollowRhombus(5);
         // ButterFly(5);
+      DiamondPattern(10);
 
 }}
