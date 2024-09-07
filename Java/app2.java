@@ -193,7 +193,7 @@ System.out.println();
 
     public static void main(String[] args) throws Exception {
 
-        // invertedPyramid(5);
+        invertedPyramid(5);
         InvertedHalfPyramid(5);
         FloysTr(5);
             // BnyrTr(5);
