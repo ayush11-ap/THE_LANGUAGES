@@ -195,7 +195,7 @@ System.out.println();
 
         // invertedPyramid(5);
         // InvertedHalfPyramid(5);
-        // FloysTr(5);
+        FloysTr(5);
             // BnyrTr(5);
         // SolidRhombus(5);
         // HollowRhombus(5);
