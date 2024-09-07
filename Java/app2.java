@@ -197,8 +197,8 @@ System.out.println();
         InvertedHalfPyramid(5);
         FloysTr(5);
             // BnyrTr(5);
-        // SolidRhombus(5);
-        // HollowRhombus(5);
+        SolidRhombus(5);
+        HollowRhombus(5);
         // ButterFly(5);
     DiamondPattern(10);
 
