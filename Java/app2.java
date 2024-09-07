@@ -203,3 +203,5 @@ System.out.println();
     // DiamondPattern(10);
 
 }}
+
+// fdsijksdjklfjflkjlskjf
