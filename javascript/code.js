@@ -11,11 +11,11 @@ const person = {
   };
   
   // Accessing properties
-  console.log(person.name); // Output: John Doe
-  console.log(person.age);  // Output: 30
+  // console.log(person.name); // Output: John Doe
+  // console.log(person.age);  // Output: 30
   
   // Calling a method
-  person.greet(); // Output: Hello, my name is John Doe
+  // person.greet(); // Output: Hello, my name is John Doe
   
 
 
@@ -39,7 +39,7 @@ function User(username , loginCount , isLoggesIn){
         console.log(`namaste ${this.username}`)
     }
    
-    return this  ;
+    // return this  ;
    
    }
     
@@ -53,10 +53,11 @@ function User(username , loginCount , isLoggesIn){
 //    console.log(userOne)
 // userOne.greeting()
 let userTwo  =  new User("kushwaha" , 17 , false) 
-//    console.log(userTwo)
+   console.log(userTwo)
+   console.log(userOne)
    
    
-   console.log(userOne.constructor)
+  //  console.log(userOne.constructor)
    // constructor ,reference hota  hai kud ke hii barem me
    // console.log(userTwo)
    
