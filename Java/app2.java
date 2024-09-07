@@ -199,7 +199,7 @@ System.out.println();
             // BnyrTr(5);
         // SolidRhombus(5);
         // HollowRhombus(5);
-        ButterFly(5);
+        // ButterFly(5);
     // DiamondPattern(10);
 
 }}
