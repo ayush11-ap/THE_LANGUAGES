@@ -157,6 +157,13 @@ console.log(student1 instanceof Students)
 
 
 
+
+
+
+
+
+
+
 //  js  ka  default behaviour hy , prototypical behaviour  , layer par yupar jati hy parent , grant parent   , ko acess karti hy jab tak null na mile .
 
 //  function ka demo dena hai like .  obejct jaise 
