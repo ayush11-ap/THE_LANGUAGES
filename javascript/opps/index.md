@@ -47,25 +47,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    5. Prototypes & Prototype Inheritance  
    6. `call`, `apply`, `bind`  
    7. Classes, `extends`, `super()`  
