@@ -191,17 +191,57 @@ System.out.println();
 
 }
 
-    public static void main(String[] args) throws Exception {
 
-        invertedPyramid(5);
-        InvertedHalfPyramid(5);
-        FloysTr(5);
+public static void NumberPyramid(int n ){
+
+    for(int i = 0 ; i < n ;i++){
+
+     for(int j = 0  ; j< n -1 - i ; j++){
+    System.out.print(" ");
+     }
+     for(int j = i +1 ; j >= 1  ; j -- ){
+     System.out.print(j);
+     }
+     for(int j = 1 ; j <= i   ; j ++ ){
+     System.out.print(j +1);
+     }
+
+System.out.println();
+    }
+}
+
+
+public static void Palindrome(int n ){
+
+    for(int i = 0 ; i < n ;i++){
+
+     for(int j = 0  ; j< n -1 - i ; j++){
+    System.out.print(" ");
+     }
+     for(int j = 1 ; j  <= i +1   ; j ++ ){
+     System.out.print(j);
+     }
+     for(int j = i ; j >= 1   ; j -- ){
+     System.out.print(j );
+     }
+
+System.out.println();
+    }
+}
+
+
+    public static void main(String[] args)  {
+
+        // invertedPyramid(5);
+        // InvertedHalfPyramid(5);
+        // FloysTr(5);
             // BnyrTr(5);
-        SolidRhombus(5);
-        HollowRhombus(5);
+        // SolidRhombus(5);
+        // HollowRhombus(5);
         // ButterFly(5);
-    DiamondPattern(10);
+    // DiamondPattern(10);
+    // NumberPyramid(5);
+    Palindrome(5);
 
 }}
 
-// fdsijksdjklfjflkjlskjf
