@@ -81,12 +81,7 @@ function Students(name, rollNo, marks) {
     ```js
     console.log(student1 instanceof Students);  // Output: true
     ```
-- **Instance Method:** You can add methods in the constructor that each instance will have.
-    ```js
-    Students.prototype.getMarks = function() {
-        return this.marks;
-    };
-    ```
+
 
 ##### **Why Use `new` Keyword?**
 
