@@ -6,9 +6,6 @@
 
 Object literals allow you to create objects using key-value pairs directly. Here's an example:
 
-
-
-
 ```js
 let user = {
     name: "Akshay",
