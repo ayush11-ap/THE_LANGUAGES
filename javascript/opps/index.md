@@ -47,18 +47,46 @@
 
 
 
-   5. Prototypes & Prototype Inheritance  
+  # 5. Prototypes & Prototype Inheritance
+
+## Addon - Info for New Keyword
+
+### Topics:
+- What happens when the `new` keyword is used:
+  - A new object is created.
+  - A prototype is linked.
+  - The constructor is called.
+  - The new object is returned.
+
+### JavaScript Default Behavior:
+- Prototypical behavior.
+- Everything is an object.
+
+### Ways to Add Methods to a Constructor Function:
+- `this.methodName`.
+- `functionName.prototype.methodName`.
+
+### Inheritance:
+- Older Way: `student.__proto__ = teacher`.
+- Modern Way: `Object.setPrototypeOf(student, teacher)`.
+
+
+
+
+
+
+
    6. `call`, `apply`, `bind`  
    7. Classes, `extends`, `super()`  
    8. Creating Static Methods, Private Variables, Private Fields  
-   9. Getter and Setter Methods  
+   9.  Getter and Setter Methods  
       - By Class  
       - By Function  
       - By Objects  
    10. `Object.getOwnPropertyDescriptor` & `Object.defineProperty`  
    11. `Object.create()`
 
-5. **4 Pillars of OOP With Examples**  
+1. **4 Pillars of OOP With Examples**  
    - Abstraction  
    - Encapsulation  
    - Inheritance  

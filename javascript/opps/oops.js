@@ -160,24 +160,27 @@ console.log(student1 instanceof Students)
 
 
 
-//  ! 5. Prototypes & Prototype Inheritance
 
+// ?   5. Prototypes & Prototype Inheritance
+// 
+//  * Addon - Info for New Keyword
+// 
+//   ? Topics:
+//   - What happens when the `new` keyword is used:
+//  *   - A new object is created.
+//  *   - A prototype is linked.
+//  *   - The constructor is called.
+//  *   - The new object is returned.
+// 
+//  ? JavaScript Default Behavior:
+//   - Prototypical behavior.
+//   - Everything is an object.
+// 
+//  ? Ways to Add Methods to a Constructor Function:
+//   - this.methodName.
+//   - functionName.prototype.methodName.
+// 
+//  ?  Inheritance:
+//   - Older Way: student.__proto__ = teacher.
+//   - Modern Way: Object.setPrototypeOf(student, teacher).
 
-
-//  js  ka  default behaviour hy , prototypical behaviour  , layer par yupar jati hy parent , grant parent   , ko acess karti hy jab tak null na mile .
-
-//  function ka demo dena hai like .  obejct jaise 
-
-// function function vhi hy , object vhi hy 
-// function technically  reference object ko vhi karta hai 
-
-//  2 tarike ke  se method ko add kar skate constructor function me 
-// 1. this.methodname 
-// 2 . funcitonname.prototype.methodname 
-// with new  keyword ke sat aur without new keyword ke saat
-
-//  prototype aur detail me 
-//  String.protoype .   , obejxt .rptorottype , 
-// inhertiance 
-// older way --   student.__proto__ = teacher
-// Modern way -- Object.setPrototypeOf(student , teacher)
