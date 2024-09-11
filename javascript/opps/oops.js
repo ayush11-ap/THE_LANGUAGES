@@ -160,7 +160,7 @@ console.log(student1 instanceof Students)
 
 
 
-
+//  ! 5. Prototypes & Prototype Inheritance
 
 
 
@@ -179,8 +179,5 @@ console.log(student1 instanceof Students)
 //  prototype aur detail me 
 //  String.protoype .   , obejxt .rptorottype , 
 // inhertiance 
-
 // older way --   student.__proto__ = teacher
-
-
 // Modern way -- Object.setPrototypeOf(student , teacher)
