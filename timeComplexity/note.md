@@ -183,7 +183,6 @@ Yahaan loop n times chalega, isliye time complexity O(n) hai.
 
    ### **What is Space Complexity?**
 
-Space complexity refers to the total amount of memory used by an algorithm, including memory for variables, data structures, and function call overhead.
 
 ---
 

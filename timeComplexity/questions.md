@@ -128,7 +128,6 @@
 
 ---
 
-Here are 10 questions where you can calculate both **space complexity** and **time complexity**:
 
 ---
 

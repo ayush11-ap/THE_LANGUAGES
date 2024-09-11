@@ -180,7 +180,7 @@ console.log(student1 instanceof Students)
 //   - this.methodName.
 //   - functionName.prototype.methodName.
 // 
-//  ?  Inheritance:
+//  ?  Inheritance: && bibble of js  page no 17 
 //   - Older Way: student.__proto__ = teacher.
 //   - Modern Way: Object.setPrototypeOf(student, teacher).
 
