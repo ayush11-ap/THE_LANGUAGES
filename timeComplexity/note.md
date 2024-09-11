@@ -179,3 +179,91 @@ Yahaan loop n times chalega, isliye time complexity O(n) hai.
    ```python
    arr = [0] * n  # O(n) space allocated for the array
    ```
+   ---
+
+   ### **What is Space Complexity?**
+
+Space complexity refers to the total amount of memory used by an algorithm, including memory for variables, data structures, and function call overhead.
+
+---
+
+### **What Causes Space Complexity?**
+
+1. **Variables:**
+   Every variable takes up space. For example, creating an integer or string will require some fixed memory.
+
+2. **Data Structures:**
+   Arrays, objects, or other data structures consume memory based on the number of elements they store.
+
+3. **Function Calls:**
+   Recursion or function calls add frames to the call stack, using more memory.
+
+4. **Dynamic Allocations:**
+   Dynamically created objects or arrays require additional memory.
+
+---
+
+### **Different Types of Space Complexity in JavaScript:**
+
+1. **Constant Space Complexity (O(1)):**
+   Uses a fixed amount of memory, regardless of input size.
+
+   **Example:**
+   ```javascript
+   function checkFirstElement(arr) {
+       console.log(arr[0]);  // O(1)
+   }
+   ```
+
+2. **Linear Space Complexity (O(n)):**
+   Memory usage grows linearly with the size of the input.
+
+   **Example:**
+   ```javascript
+   function createArray(n) {
+       let arr = new Array(n);  // O(n)
+       return arr;
+   }
+   ```
+
+3. **Logarithmic Space Complexity (O(log n)):**
+   Memory usage grows logarithmically, often seen in recursive algorithms like binary search.
+
+   **Example:**
+   ```javascript
+   function binarySearch(arr, target, low, high) {
+       if (low <= high) {
+           let mid = Math.floor((low + high) / 2);
+           if (arr[mid] === target) return mid;
+           return arr[mid] > target ? 
+               binarySearch(arr, target, low, mid - 1) : 
+               binarySearch(arr, target, mid + 1, high);
+       }
+       return -1;
+   }
+   ```
+
+4. **Quadratic Space Complexity (O(n^2)):**
+   Memory usage grows as the square of the input size.
+
+   **Example:**
+   ```javascript
+   function createMatrix(n) {
+       let matrix = Array.from({ length: n }, () => new Array(n));  // O(n^2)
+       return matrix;
+   }
+   ```
+
+| **Time Complexity** | **Performance** | **Space Complexity** | **Performance** |
+|---------------------|-----------------|----------------------|-----------------|
+| O(2^n)              | Exponential      | O(n^2)               | Quadratic       |
+| O(n!)               | Factorial        | O(n^2)               | Quadratic       |
+| O(n^2)              | Quadratic        | O(n * log n)         | n log n         |
+| O(n * log n)        | n log n          | O(n)                 | Linear          |
+| O(n)                | Linear           | O(log n)             | Logarithmic     |
+| O(log n)            | Logarithmic      | O(1)                 | Constant        |
+| O(1)                | Constant         | O(1)                 | Constant        |
+
+### Key Points:
+- **Time Complexity:** As you go from **O(2^n)** to **O(1)**, the performance improves (i.e., the algorithm becomes faster).
+- **Space Complexity:** As you go from **O(n^2)** to **O(1)**, the memory usage improves (i.e., less space is used). 
