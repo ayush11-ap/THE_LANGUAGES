@@ -325,18 +325,18 @@
 
 
 
-const teacher  ={
-        canTeach:true ,
-     }
+// const teacher  ={
+//         canTeach:true ,
+//      }
     
-     const student  ={
-        canLearn: true,
+//      const student  ={
+//         canLearn: true,
          
-     }
+//      }
     
-//       older way 
-//      student.__proto__ = teacher 
-//  modern way 
-Object.setPrototypeOf(student, teacher)
+// //       older way 
+// //      student.__proto__ = teacher 
+// //  modern way 
+// Object.setPrototypeOf(student, teacher)
 
-     console.log(student.canTeach)
+//      console.log(student.canTeach)
