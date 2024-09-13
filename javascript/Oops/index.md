@@ -1,7 +1,5 @@
 ### Module 14 - Object-Oriented Programming (OOP) in JavaScript
 
-
-
 **Programming Paradigms:**
 
 1. **Functional Programming (FP)**  
@@ -32,6 +30,7 @@
    - Inheritance  
    - Polymorphism  
 
+
 2. Parts of OOP: Language-Specific Features  
 
 - 1. Object Literals  
@@ -42,10 +41,6 @@
         - Instances (`new` Keyword) & `instanceof` Method, `instance.constructor`  
         - Why Use `new` Keyword  
         - Definition of Constructor Function
-
-
-
-
 
   # 5. Prototypes & Prototype Inheritance
 
@@ -69,11 +64,6 @@
 ### Inheritance:
 - Older Way: `student.__proto__ = teacher`.
 - Modern Way: `Object.setPrototypeOf(student, teacher)`.
-
-
-
-
-
 
 
    6. `call`, `apply`, `bind`  
