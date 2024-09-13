@@ -36,15 +36,6 @@
 
 
 
-
-
-
-
-<!-- 5. **Find the GCD and LCM of Three Numbers**
-   - Write a program to find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of three numbers. -->
-
-
-
 ## Patterns - EASY
 
 - Star pattern 
